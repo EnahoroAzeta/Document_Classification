@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Document classification application
+		</div>
+		<h2>Multi class Document classification</h2>
+
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="http://127.0.0.1:5000/get_classification" method = "POST">
+		<p>Paste document content here</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="4" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="predict">
+
+	</form>
+
+	</div>
+
+
+
+
+</body>
+</html>
