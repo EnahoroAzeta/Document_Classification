@@ -70,6 +70,6 @@ class Records(Resource):
 
 
 api.add_resource(Records, '/')
-app.run(debug=True)
+app.run()
 
 
